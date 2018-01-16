@@ -1,0 +1,17 @@
+#Login no OIM;Acao;Role;Comentario 
+#A primeira coluna refere-se ao login do OIM do beneficiario (a pessoa que sofrera a modificacao) 
+#A segunda coluna e' a acao, que pode ser: 
+#	ADICIONAR          Adiciona a Role do Remedy para o login informado 
+#	REVOGAR       Remove a Role do Remedy para o login informado
+#A Terceira coluna eh um campo de comentario (Campo obrigatorio). 
+# 
+# Toda linha iniciada com # e' ignorada pelo sistema de carga assim como linhas sem conteudo 
+# 
+# A carga ocorrera em tres passos: 
+#		1. Validacao do arquivo: Se o usuario existe, se o perfil existe, se o recurso ja esta ou nao provisionado... 
+#		2. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo e' carregado 
+#		3. Apresentacao dos resultados da carga: E' apresentado uma tela com os IDs das requisicoes. 
+# Ao final de cada passo e' possivel fazer o download do arquivo de validacao ou finalizacao com os IDs 
+# O processo de carga nao valida duplicidades no arquivo de carga ou multiplas acoes no mesmo usuario. 
+#A0000001;ADICIONAR;Por favor ADICIONAR Testes 
+#A0000001;REVOGAR;Por favor REVOGAR Testes

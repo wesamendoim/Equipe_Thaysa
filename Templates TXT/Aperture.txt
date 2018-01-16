@@ -1,0 +1,26 @@
+#Login no OIM;Acao;Perfil;Comentario 
+#A primeira coluna refere-se ao login IDM do beneficiario (a pessoa que sofrera a modificacao) 
+#A segunda coluna eh a acao, que pode ser: 
+#   ADICIONAR_APERTURE        Adiciona (provisiona) um perfil e seus itens para o login informado  
+#   REMOVER_APERTURE          Remove um item* para o login informado 
+#   ATIVAR_APERTURE           Ativa a conta do Aperture do usuario  
+#   DESATIVAR_APERTURE        Desativa a conta do Aperture do usuario  
+#   MODIFICAR_PERFIL_APERTURE Modifica o perfil da Aperture do usuario  
+#       *Os itens compreendem: Perfil  
+#A terceira coluna eh o perfil (obrigatorio quando para adicionar).  
+#A quarta coluna eh um campo de comentario.  
+# 
+# Toda linha iniciada com # eh ignorada pelo sistema de carga assim como linhas sem conteudo 
+# 
+# A carga ocorrera em tres passos: 
+#   1. Validacao do arquivo: Se o usuario existe, se o perfil existe, se o perfil ja esta ou nao provisionado. 
+#                            Se nao existem mais de 1 acao para o mesmo login. 
+#   2. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo eh carregado 
+#   3. Apresentacao dos resultados da carga: Eh apresentado uma tela com os IDs das requisicoes. 
+# Ao final de cada passo eh possivel fazer o download do arquivo de validacao ou finalizacao com os IDs 
+# O processo de carga nao valida duplicidades no arquivo de carga. 
+99999993;ADICIONAR_APERTURE;GC_Equipe_Design;Justificativa 
+99999994;REMOVER_APERTURE;GC_Equipe_Design;Justificativa 
+99999995;ATIVAR_APERTURE;GC_Equipe_Design;Justificativa 
+99999992;DESATIVAR_APERTURE;GC_Equipe_Design;Justificativa 
+99999992;MODIFICAR_PERFIL_APERTURE;GC_Equipe_Design;Justificativa 

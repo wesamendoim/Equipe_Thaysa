@@ -1,0 +1,26 @@
+#Login no OIM;Action;Perfil;Comentario  
+#A primeira coluna refere-se ao login no OIM do beneficiario (a pessoa que sofrera a modificacao)  
+#A segunda coluna eh a acao, que pode ser:  
+#   ADICIONAR                          Adiciona (provisiona) o Bematize para o login informado  
+#   REMOVER                            Remove o Bematize do usuario  
+#   DESATIVAR                          Desativa o Bematize do usuario  
+#   ATIVAR                             Ativa o Bematize do usuario  
+#   ADICIONAR_FILHO_BEMATI_C_PERFIL    Adiciona um perfil para o Bematize do usuario
+#   REMOVER_FILHO_BEMATI_C_PERFIL      Remove um perfil para o Bematize do usuario
+#A terceira coluna eh o perfil: (obrigatorio quando para adicionar) 
+#A quarta coluna eh um campo para comentario:  
+#  
+# Toda linha iniciada com # eh ignorada pelo sistema de carga assim como linhas sem conteudo  
+#  
+# A carga ocorrera em tres passos:  
+#   1. Validacao do arquivo: Se o usuario existe, se o perfil existe e as acoes.  
+#   2. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo eh carregado  
+#   3. Apresentacao dos resultados da carga: Eh apresentado uma tela com os IDs das requisicoes.  
+# Ao final de cada passo eh possivel fazer o download do arquivo de validacao ou finalizacao com os IDs  
+# O processo de carga nao valida duplicidades no arquivo de carga ou multiplas acoes no mesmo usuario.  
+A000000;ADICIONAR;Perfil;Justificativa  
+A000000;REMOVER;Perfil;Justificativa  
+A000000;DESATIVAR;Perfil;Justificativa  
+A000000;ATIVAR;Perfil;Justificativa 
+A000000;ADICIONAR_FILHO_BEMATI_C_PERFIL;Perfil;Justificativa  
+A000000;REMOVER_FILHO_BEMATI_C_PERFIL;Perfil;Justificativa    

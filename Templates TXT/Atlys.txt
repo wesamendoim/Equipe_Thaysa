@@ -1,0 +1,24 @@
+#Login do OIM;Action;Perfil;Comentario 
+#A primeira coluna refere-se ao login do OIM do beneficiario (a pessoa que sofrera a modificacao) 
+#A segunda coluna e' a acao, que pode ser: 
+#	ADICIONAR					Adiciona (provisiona) um recurso Atlys com o perfil indicado 
+#	REMOVER						remove o recurso Atlys do usuario 
+#	MODIFICAR					troca o perfil do recurso Atlys 
+#	ADICIONAR_ATRIBUTO_EXTRA	Adiciona um recurso 'Atlys Atributo Extra' com o perfil indicado 
+#	REMOVER_ATRIBUTO_EXTRA		Remove o recurso 'Atlys Atributo Extra' com o perfil indicado 
+#A terceira coluna e o Perfil (obrigatorio quando para adicionar) 
+# 
+# Toda linha iniciada com # e' ignorada pelo sistema de carga assim como linhas sem conteudo 
+# 
+# A carga ocorrera em tres passos: 
+#		1. Validacao do arquivo: Se o usuario existe, se o perfil existe, se o recurso ja esta ou nao provisionado... 
+#		2. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo e' carregado 
+#		3. Apresentacao dos resultados da carga: E' apresentado uma tela com os IDs das requisicoes. 
+# Ao final de cada passo e' possivel fazer o download do arquivo de validacao ou finalizacao com os IDs 
+# O processo de carga nao valida duplicidades no arquivo de carga ou multiplas acoes no mesmo usuario. 
+40412698;REMOVER;ATLYS_STARS2;Comentario 
+40412690;MODIFICAR;ATLYS_STARS2;Comentario 
+40412690;ADICIONAR;ATLYS_STARS2;Comentario 
+A0006528;REVOGAR;ATLYS_STARS2;Comentario 
+A0006528;REMOVER_ATRIBUTO_EXTRA;ATLYS_STARS2;Comentario 
+40412690;ADICIONAR_ATRIBUTO_EXTRA;ATLYS_STARS2;Comentario 

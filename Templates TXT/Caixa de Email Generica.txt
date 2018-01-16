@@ -1,0 +1,28 @@
+#Login no OIM;Acao;Observacao;loginGestor;Tipo;Nome;Justificativa 
+#A primeira coluna refere-se ao login no OIM do beneficiario (a pessoa que sofrera a modificacao) 
+#A segunda coluna eh a acao, que pode ser: 
+#   ADICIONAR_CEG          Adiciona a conta do Caixa de e-mail Generica para o login informado 
+#   REMOVER_CEG        Remove a conta do Caixa de e-mail Generica  para o login informado 
+#   ATIVAR_CEG         Ativa a conta do Caixa de e-mail Generica  do usuario  
+#   DESATIVAR_CEG         Desativa a conta do Caixa de e-mail Generica  do usuario  
+#   ADICIONAR_ITEM         Adicionar Item da Caixa de e-mail Generica  do usuario  
+#   REMOVER_ITEM         Remover Item da Caixa de e-mail Generica  do usuario  
+#A Terceira coluna eh um campo de Observacao.  
+#A Quarta coluna eh um campo de Login Gestor.  
+#A Quinta coluna eh um campo de Tipo Caixa.  
+#A Sexta coluna eh um campo de Nome da Caixa.  
+#A Setima coluna eh um campo de Justificativa.  
+# 
+# Toda linha iniciada com # eh ignorada pelo sistema de carga assim como linhas sem conteudo 
+# 
+# A carga ocorrera em tres passos: 
+#   1. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo eh carregado 
+#   2. Apresentacao dos resultados da carga: Eh apresentado uma tela com os IDs das requisicoes. 
+# Ao final de cada passo eh possivel fazer o download do arquivo de validacao ou finalizacao com os IDs 
+# O processo de carga nao valida duplicidades no arquivo de carga. 
+99999999;ADICIONAR_CEG;Observacao;loginGestor;Tipo;Nome;Justificativa        
+99999999;REMOVER_CEG;Observacao;loginGestor;Tipo;Nome;Justificativa           
+99999999;ATIVAR_CEG;Observacao;loginGestor;Tipo;Nome;Justificativa            
+99999999;DESATIVAR_CEG;Observacao;loginGestor;Tipo;Nome;Justificativa      
+99999999;REMOVER_ITEM;Observacao;loginGestor;Tipo;Nome;Justificativa  
+99999999;ADICIONAR_ITEM;Observacao;loginGestor;Tipo;Nome;Justificativa  

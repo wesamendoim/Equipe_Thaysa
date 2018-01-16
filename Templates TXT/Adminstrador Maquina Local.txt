@@ -1,0 +1,28 @@
+#Login no OIM;Acao;Perfil;Hostname;Justificativa 
+#A primeira coluna refere-se ao login IDM do beneficiario (a pessoa que sofrera a modificacao) 
+#A segunda coluna eh a acao, que pode ser: 
+#   ADICIONAR_ALOCMA 	Adiciona (provisiona) uma conta para o login informado  
+#   REMOVER_ALOCMA 	Remove uma conta para o login informado  
+#   ATIVAR_ALOCMA		Ativa a conta do Administrador Local da Maquina do usuario  
+#   DESATIVAR_ALOCMA 	Desativa a conta do Administrador Local da Maquina do usuario  
+#   ADICIONAR_PERFIL_ALOCMA		Adiciona um perfil para conta do Administrador Local da Maquina do usuario  
+#   REMOVER_PERFIL_ALOCMA		Revomoce Umperfil para a conta do Administrador Local da Maquina do usuario  
+#A terceira coluna eh o perfil (obrigatorio quando para adicionar ou remover).  
+#A Quarta coluna um campo de Hostname.   (obrigatorio quando para adicionar)
+#A Quinta coluna um campo de Justificativa (obrigatorio) 
+# 
+# Toda linha iniciada com # eh ignorada pelo sistema de carga assim como linhas sem conteudo 
+# 
+# A carga ocorrera em tres passos: 
+#   1. Validacao do arquivo: Se o usuario existe, se o perfil existe, se o perfil ja esta ou nao provisionado. 
+#                            Se nao existem mais de 1 acao para o mesmo login. 
+#   2. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo eh carregado 
+#   3. Apresentacao dos resultados da carga: Eh apresentado uma tela com os IDs das requisicoes. 
+# Ao final de cada passo eh possivel fazer o download do arquivo de validacao ou finalizacao com os IDs 
+# O processo de carga nao valida duplicidades no arquivo de carga. 
+#99999992;ADICIONAR_ALOCMA;Perfil;Hostname;Justificativa 
+#99999993;REMOVER_ALOCMA;Perfil;Hostname;Justificativa 
+#99999994;ATIVAR_ALOCMA;PERFIL;Hostname;Justificativa 
+#99999996;DESATIVAR_ALOCMA;Perfil;Hostname;Justificativa 
+#99999997;ADICIONAR_PERFIL_ALOCMA;Perfil;Hostname;Justificativa 
+#99999997;REMOVER_PERFIL_ALOCMA;Perfil;Hostname;Justificativa  

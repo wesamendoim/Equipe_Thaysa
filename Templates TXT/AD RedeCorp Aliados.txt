@@ -1,0 +1,16 @@
+#Login do OIM;Action;Comentario  
+#A primeira coluna refere-se ao login do OIM do beneficiario (a pessoa que sofrera a modificacao)  
+#A segunda coluna eh a acao, que pode ser:  
+#   ADICIONAR                         Adiciona (provisiona) a role para o login informado  
+#   REVOGAR                         Remove (provisiona) a rolepara o login informado  
+#  
+# Toda linha iniciada com # eh ignorada pelo sistema de carga assim como linhas sem conteudo  
+#  
+# A carga ocorrera em tres passos:  
+#   1. Validacao do arquivo: Se o usuario existe, se o role existe, se a role ja esta ou nao provisionado.  
+#   2. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo eh carregado  
+#   3. Apresentacao dos resultados da carga: Eh apresentado uma tela com os IDs das requisicoes.  
+# Ao final de cada passo eh possivel fazer o download do arquivo de validacao ou finalizacao com os IDs  
+# O processo de carga nao valida duplicidades no arquivo de carga ou multiplas acoes no mesmo usuario.  
+A00000;ADICIONAR;Justificativa  
+A00000;REVOGAR;Justificativa   

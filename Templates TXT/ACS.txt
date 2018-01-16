@@ -1,0 +1,25 @@
+#Login no OIM;Action;Perfil;E-mail do CSL;Comentario  
+#A primeira coluna refere-se ao login no OIM do beneficiario (a pessoa que sofrera a modificacao)  
+#A segunda coluna eh a acao, que pode ser:  
+#   ADICIONAR                          Adiciona (provisiona) o ACS para o login informado  
+#   REMOVER                            Remove o ACS do usuario  
+#   DESATIVAR                          Desativa o ACS do usuario  
+#   ATIVAR                             Ativa o ACS do usuario  
+#   ALTERAR                            Altera o ACS do usuario 
+#A terceira coluna eh o perfil: (obrigatorio quando para adicionar ou alterar) 
+#A quarta coluna eh o e-mail do CSL: (obrigatorio quando para adicionar ou alterar) 
+#A quarta coluna eh um campo para comentario:  
+#  
+# Toda linha iniciada com # eh ignorada pelo sistema de carga assim como linhas sem conteudo  
+#  
+# A carga ocorrera em tres passos:  
+#   1. Validacao do arquivo: Se o usuario existe, se o perfil existe e as acoes.  
+#   2. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo eh carregado  
+#   3. Apresentacao dos resultados da carga: Eh apresentado uma tela com os IDs das requisicoes.  
+# Ao final de cada passo eh possivel fazer o download do arquivo de validacao ou finalizacao com os IDs  
+# O processo de carga nao valida duplicidades no arquivo de carga ou multiplas acoes no mesmo usuario.  
+A000000;ADICIONAR;Perfil;E-mail do CSL;Justificativa  
+A000000;REMOVER;Perfil;E-mail do CSL;Justificativa  
+A000000;DESATIVAR;Perfil;E-mail do CSL;Justificativa  
+A000000;ATIVAR;Perfil;E-mail do CSL;Justificativa  
+A000000;ALTERAR;Perfil;E-mail do CSL;Justificativa  

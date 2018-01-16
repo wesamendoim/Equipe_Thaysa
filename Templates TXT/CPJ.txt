@@ -1,0 +1,24 @@
+#Login no OIM;Acao;Perfil;observacao;Grupo de Trabalho;Justificativa 
+#A primeira coluna refere-se ao login IDM do beneficiario (a pessoa que sofrera a modificacao) 
+#A segunda coluna eh a acao, que pode ser: 
+#   ADICIONAR          Adiciona a conta do CPJ para o login informado 
+#   REMOVER        Remove a conta do CPJ  para o login informado 
+#   ATIVAR         Ativa a conta do CPJ  do usuario  
+#   ALTERAR         Desativa a conta do CPJ  do usuario  
+#A Terceiro Coluna eh o campo Perfil 
+#A Quarta Coluna eh o campo Observacao 
+#A Quinta Coluna eh o campo  Grupo de Trabalho 
+#A Sexta Coluna eh o campo Justificativa 
+# Toda linha iniciada com # eh ignorada pelo sistema de carga assim como linhas sem conteudo 
+# A carga ocorrera em tres passos: 
+#1. Validacao do arquivo: Se o usuario existe, se o perfil existe, se o perfil ja esta ou nao provisionado. 
+# Se nao existem mais de 1 acao para o mesmo login. 
+# 2. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo eh carregado 
+# 3. Apresentacao dos resultados da carga: Eh apresentado uma tela com os IDs das requisicoes. 
+# Ao final de cada passo eh possivel fazer o download do arquivo de validacao ou finalizacao com os IDs 
+# O processo de carga nao valida duplicidades no arquivo de carga. 
+#40412799;ADICIONAR; Perfil; Observacao; Grupo de Trabalho; Justificativa
+#40412761;REMOVER; Perfil; Observacao; Grupo de Trabalho; Justificativa
+#40412799;ATIVAR; Perfil; Observacao; Grupo de Trabalho; Justificativa             
+#40412799;DESATIVAR; Perfil; Observacao; Grupo de Trabalho; Justificativa
+#40412761;ALTERAR; Perfil; Observacao; Grupo de Trabalho; Justificativa

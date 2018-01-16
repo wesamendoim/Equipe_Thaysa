@@ -1,0 +1,26 @@
+#Login no OIM;Acao;Perfil;Comentario 
+#A 1) coluna refere-se ao login IDM do beneficiario (a pessoa que sofrera a modificacao
+#A 2) coluna eh a acao, que pode ser:
+#   ADICIONAR          Adiciona a conta do Captive Portal para o login informado
+#   REMOVER       Remove a conta do Captive Portal para o login informado
+#   ATIVAR         Ativa a conta do Captive Portal do usuario
+#   DESATIVAR         Desativar a conta do Captive Portal do usuario
+#   ALTERAR         Alterar os atributos do Captive Portal
+#       *Os itens compreendem: Perfil
+#A 3) coluna eh o campo Perfil do Captive Portal a ser adicionado ou modificado.
+#A 4) coluna eh um campo de comentario (Campo obrigatorio).
+# 
+# Toda linha iniciada com # eh ignorada pelo sistema de carga assim como linhas sem conteudo
+# 
+# A carga ocorrera em tres passos: 
+#   1. Validacao do arquivo: Se o usuario existe, se o perfil existe, se o perfil ja esta ou nao provisionado.
+#                            Se nao existem mais de 1 acao para o mesmo login.
+#   2. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo eh carregado
+#   3. Apresentacao dos resultados da carga: Eh apresentado uma tela com os IDs das requisicoes.
+# Ao final de cada passo eh possivel fazer o download do arquivo de validacao ou finalizacao com os IDs
+# O processo de carga nao valida duplicidades no arquivo de carga.
+99412799;ADICIONAR;Perfil;Justificativa
+99412799;REMOVER;Perfil;Justificativa
+99412799;ATIVAR;Perfil;Justificativa
+99412799;DESATIVAR;Perfil;Justificativa
+99412799;ALTERAR;Perfil;Justificativa

@@ -1,0 +1,28 @@
+##Preferencialmente editar o arquivo com Notepad++ e em formato UTF-8. 
+##Login do OIM;Acao;Perfil;Data Inicio;Data Fim;justificativa  
+#A primeira coluna refere-se ao login IDM do beneficiario (a pessoa que sofrera a modificacao)  
+#A segunda coluna eh a acao, que pode ser:  
+#   ADICIONAR_PERFIL 	Adiciona (provisiona) um perfil para o login informado (Cria a conta caso o usuario nao tenha conta de SAP ERP) 
+#   REMOVER_PERFIL  	Remove um Perfil para o login informado  
+#   MODIFICAR_END_DATE	    Modifica a data final do login informado  
+#   DESATIVAR		Desativa a conta do SAP UM Resource Object usuario   
+#   REVOGAR 	Revoga a conta do SAP UM Resource Object do usuario   
+#A terceira coluna eh o perfil (obrigatorio quando para adicionar).   
+#A Quarta coluna eh a Data de Inicio    
+#A Quinta coluna eh a Data de Final    
+#A Sexta coluna eh a Justificativa - Informar: Cargo/Area do colaborador; Atividade a ser executada e Necessidade do perfil. 
+#  
+# Toda linha iniciada com # sera ignorada pelo sistema de carga assim como linhas sem conteudo  
+#  
+# A carga ocorrera em tres passos:  
+#   1. Validacao do arquivo: Se  o usuario existe, se o perfil existe, se o perfil ja esta ou nao provisionado, se a data final esta anterior a data inicial 
+#                            Se nao existem mais de 1 acao para o mesmo login.  
+#   2. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo eh carregado  
+#   3. Apresentacao dos resultados da carga: Eh apresentado uma tela com os IDs das requisicoes.  
+# Ao final de cada passo eh possivel fazer o download do arquivo de validacao ou finalizacao com os IDs  
+# O processo de carga nao valida duplicidades no arquivo de carga.  
+40412710;ADICIONAR_PERFIL;Z:WF-000-0000;11/12/1984;31/12/9955;Teste de carga massiva  
+40412710;REMOVER_PERFIL;Z:WF-000-0000;11/12/1984;31/12/9955;Teste de carga massiva  
+40412710;MODIFICAR_END_DATE;Z:WF-000-0000;11/12/1984;31/12/9955;Teste de carga massiva  
+40412710;DESATIVAR;Z:WF-000-0000;11/12/1984;31/12/9955;Teste de carga massiva  
+40412710;REVOGAR;Z:WF-000-0000;11/12/1984;31/12/9955;Teste de carga massiva  

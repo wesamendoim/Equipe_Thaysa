@@ -1,0 +1,30 @@
+﻿#Login no OIM;Acao;Perfil;Comentario 
+# A primeira coluna refere-se ao Login do OIM do beneficiario (a pessoa que sofrera a modificacao) 
+# A segunda coluna eh a acao, que pode ser: 
+#   ADICIONAR        Adiciona (provisiona) o ATIS-Servicos Comuns para o login informado  
+#   REMOVER          Remove o ATIS-Servicos Comuns para o login informado 
+#   ATIVAR           Ativa a conta do ATIS-Servicos Comuns do usuario  
+#   DESATIVAR        Desativa a conta do ATIS-Servicos Comuns do usuario  
+#   ADICIONAR_FILHO_ATISSC_P_PERFIL        Adiciona um perfil para a conta do ATIS-Servicos Comuns do usuario  
+#   REMOVER_FILHO_ATISSC_P_PERFIL        Remove um perfil para a conta do ATIS-Servicos Comuns do usuario  
+# A terceira coluna eh o perfil   
+# A quarta coluna eh um campo de comentario.  
+# 
+# Toda linha iniciada com # eh ignorada pelo sistema de carga assim como linhas sem conteudo 
+# 
+# A carga ocorrera em tres passos: 
+#   1. Validacao do arquivo: Se o usuario existe, se o perfil existe, se o perfil ja esta ou nao provisionado. 
+#                            Se nao existem mais de 1 acao para o mesmo login. 
+#   2. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo eh carregado 
+#   3. Apresentacao dos resultados da carga: Eh apresentado uma tela com os IDs das requisicoes. 
+# Ao final de cada passo eh possivel fazer o download do arquivo de validacao ou finalizacao com os IDs 
+# O processo de carga nao valida duplicidades no arquivo de carga. 
+# 
+# NecessA�rio ter ATIS a�� RACF, para que o acesso a ServiA�os Comuns funcione, mesmo que seja o perfil de consulta ATAANCOM.
+
+99999993;ADICIONAR;Perfil;Comentario 
+99999993;REMOVER;Perfil;Comentario 
+99999993;ATIVAR;Perfil;Comentario 
+99999993;DESATIVAR;Perfil;Comentario 
+99999993;ADICIONAR_FILHO_ATISSC_P_PERFIL;Perfil;Comentario 
+99999993;REMOVER_FILHO_ATISSC_P_PERFIL;Perfil;Comentario

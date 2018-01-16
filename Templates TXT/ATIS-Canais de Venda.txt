@@ -1,0 +1,55 @@
+#Login no OIM;Acao;Tipo de Executivo de Vendas;Codigo de Qualificacao do Executivo;Data de Nascimento;Realizar Vendas;Codigo do Backoffice;Supervisor;Codigo do Supervisor do Forca de Vendas;Sexo;Data de Ingresso do Executivo de Vendas;Codigo do Forca de Venda;Codigo do Grupo FGVR;Data de Baixa do Executivo de Vendas;Razao Status Baixa do Forca de Vendas;Telefone;Celular;Codigo da Area de Gestao;Codigo do Canal Principal do FV (Perfil);Codigo do Ponto de Venda do FV;Comentario 
+#A coluna 1 refere-se ao Login do OIM do beneficiario (a pessoa que sofrera a modificacao) 
+#A coluna 2 eh a acao, que pode ser: 
+#   ADICIONAR        Adiciona (provisiona) o ATIS-Canais de Venda para o login informado  
+#   REMOVER          Remove o ATIS-Canais de Venda para o login informado 
+#   ATIVAR           Ativa a conta do ATIS-Canais de Venda do usuario  
+#   DESATIVAR        Desativa a conta do ATIS-Canais de Venda do usuario  
+#   ALTERAR          Alterar a conta do ATIS-Canais de Venda do usuario  
+#   ADICIONAR_FILHO_ATISCV_C_CODCPFV       Adiciona um Codigo da Area de Gestao para a conta do ATIS-Canais de Venda do usuario  
+#   ADICIONAR_FILHO_ATISCV_F_PERFIL       Adiciona um Codigo do Canal Principal do FV (Perfil) para a conta do ATIS-Canais de Venda do usuario  
+#   ADICIONAR_FILHO_ATISCV_P_CODPVFV       Adiciona um Codigo do Ponto de Venda do FV para a conta do ATIS-Canais de Venda do usuario  
+#   REMOVER_FILHO_ATISCV_C_CODCPFV       Remove um Codigo da Area de Gestao para a conta do ATIS-Canais de Venda do usuario  
+#   REMOVER_FILHO_ATISCV_F_PERFIL       Remove um Codigo do Canal Principal do FV (Perfil) para a conta do ATIS-Canais de Venda do usuario  
+#   REMOVER_FILHO_ATISCV_P_CODPVFV       Remove um Codigo do Ponto de Venda do FV para a conta do ATIS-Canais de Venda do usuario  
+#A coluna 3 informa o Tipo de Executivo de Vendas   
+#A coluna 4 informa o Codigo de Qualificacao do Executivo   
+#A coluna 5 informa o Data de Nascimento   
+#A coluna 6 informa o Realizar Vendas   
+#A coluna 7 informa o Codigo do Backoffice   
+#A coluna 8 informa o Supervisor   
+#A coluna 9 informa o Codigo do Supervisor do Forca de Vendas   
+#A coluna 10 informa o Sexo   
+#A coluna 11 informa o Data de Ingresso do Executivo de Vendas   
+#A coluna 12 informa o Codigo do Forca de Venda 
+#A coluna 13 informa o Codigo do Grupo FGVR   
+#A coluna 14 informa o Data de Baixa do Executivo de Vendas   
+#A coluna 15 informa o Razao Status Baixa do Forca de Vendas   
+#A coluna 16 informa o Telefone   
+#A coluna 17 informa o Celular
+#A coluna 18 informa o Codigo da Area de Gestao  
+#A coluna 19 informa o Codigo do Canal Principal do FV (Perfil)
+#A coluna 20 informa o Codigo do Ponto de Venda do FV   
+#A coluna 21 eh um campo de comentario. 
+# 
+# Toda linha iniciada com # eh ignorada pelo sistema de carga assim como linhas sem conteudo 
+# 
+# A carga ocorrera em tres passos: 
+#   1. Validacao do arquivo: Se o usuario existe, se o Codigo do Canal Principal do FV (Perfil) existe, se o Codigo do Canal Principal do FV (Perfil) ja esta ou nao provisionado. 
+#                            Se nao existem mais de 1 acao para o mesmo login. 
+#   2. Carga do arquivo: Se no passo anterior nao houve problemas, o arquivo eh carregado 
+#   3. Apresentacao dos resultados da carga: Eh apresentado uma tela com os IDs das requisicoes. 
+# Ao final de cada passo eh possivel fazer o download do arquivo de validacao ou finalizacao com os IDs 
+# O processo de carga nao valida duplicidades no arquivo de carga. 
+# Para adicionar ou remover valores de formularios filhos eh necessario informar somente o valor a ser adicionado ou removido, os demais podem ficar vazios
+99999993;ADICIONAR;Tipo de Executivo de Vendas;Codigo de Qualificacao do Executivo;Data de Nascimento;Realizar Vendas;Codigo do Backoffice;Supervisor;Codigo do Supervisor do Forca de Vendas;Sexo;Data de Ingresso do Executivo de Vendas;Codigo do Forca de Venda;Codigo do Grupo FGVR;Data de Baixa do Executivo de Vendas;Razao Status Baixa do Forca de Vendas;Telefone;Celular;Codigo da Area de Gestao;Codigo do Canal Principal do FV (Perfil);Codigo do Ponto de Venda do FV;Comentario
+99999993;REMOVER;Tipo de Executivo de Vendas;Codigo de Qualificacao do Executivo;Data de Nascimento;Realizar Vendas;Codigo do Backoffice;Supervisor;Codigo do Supervisor do Forca de Vendas;Sexo;Data de Ingresso do Executivo de Vendas;Codigo do Forca de Venda;Codigo do Grupo FGVR;Data de Baixa do Executivo de Vendas;Razao Status Baixa do Forca de Vendas;Telefone;Celular;Codigo da Area de Gestao;Codigo do Canal Principal do FV (Perfil);Codigo do Ponto de Venda do FV;Comentario
+99999993;ATIVAR;Tipo de Executivo de Vendas;Codigo de Qualificacao do Executivo;Data de Nascimento;Realizar Vendas;Codigo do Backoffice;Supervisor;Codigo do Supervisor do Forca de Vendas;Sexo;Data de Ingresso do Executivo de Vendas;Codigo do Forca de Venda;Codigo do Grupo FGVR;Data de Baixa do Executivo de Vendas;Razao Status Baixa do Forca de Vendas;Telefone;Celular;Codigo da Area de Gestao;Codigo do Canal Principal do FV (Perfil);Codigo do Ponto de Venda do FV;Comentario
+99999993;DESATIVAR;Tipo de Executivo de Vendas;Codigo de Qualificacao do Executivo;Data de Nascimento;Realizar Vendas;Codigo do Backoffice;Supervisor;Codigo do Supervisor do Forca de Vendas;Sexo;Data de Ingresso do Executivo de Vendas;Codigo do Forca de Venda;Codigo do Grupo FGVR;Data de Baixa do Executivo de Vendas;Razao Status Baixa do Forca de Vendas;Telefone;Celular;Codigo da Area de Gestao;Codigo do Canal Principal do FV (Perfil);Codigo do Ponto de Venda do FV;Comentario
+99999993;ALTERAR;Tipo de Executivo de Vendas;Codigo de Qualificacao do Executivo;Data de Nascimento;Realizar Vendas;Codigo do Backoffice;Supervisor;Codigo do Supervisor do Forca de Vendas;Sexo;Data de Ingresso do Executivo de Vendas;Codigo do Forca de Venda;Codigo do Grupo FGVR;Data de Baixa do Executivo de Vendas;Razao Status Baixa do Forca de Vendas;Telefone;Celular;Codigo da Area de Gestao;Codigo do Canal Principal do FV (Perfil);Codigo do Ponto de Venda do FV;Comentario
+99999993;ADICIONAR_FILHO_ATISCV_C_CODCPFV;;;;;;;;;;;;;;;;Codigo da Area de Gestao;;;Comentario
+99999993;ADICIONAR_FILHO_ATISCV_F_PERFIL;;;;;;;;;;;;;;;;;Codigo do Canal Principal do FV (Perfil);;Comentario
+99999993;ADICIONAR_FILHO_ATISCV_P_CODPVFV;;;;;;;;;;;;;;;;;;Codigo do Ponto de Venda do FV;Comentario
+99999993;REMOVER_FILHO_ATISCV_C_CODCPFV;;;;;;;;;;;;;;;;Codigo da Area de Gestao;;;Comentario
+99999993;REMOVER_FILHO_ATISCV_F_PERFIL;;;;;;;;;;;;;;;;;Codigo do Canal Principal do FV (Perfil);;Comentario
+99999993;REMOVER_FILHO_ATISCV_P_CODPVFV;;;;;;;;;;;;;;;;;;Codigo do Ponto de Venda do FV;Comentario
